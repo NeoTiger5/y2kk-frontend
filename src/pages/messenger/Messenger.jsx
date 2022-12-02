@@ -56,7 +56,7 @@ console.log();
     const getConversations = async () => {
       try {
         const res = await axios.get(
-          `${"http://52.66.200.225"}/getConversation/${user.id}`
+          `${"https://y2kk.tk"}/getConversation/${user.id}`
         );
 
         setConversations(res.data);
@@ -71,7 +71,7 @@ console.log();
     const getMessages = async () => {
       try {
         const res = await axios.get(
-          `${"http://52.66.200.225"}/getMessage/${currentChat?._id}`
+          `${"https://y2kk.tk"}/getMessage/${currentChat?._id}`
         );
         setMessages(res.data);
       } catch (err) {
@@ -102,7 +102,7 @@ console.log();
     });
     try {
       const res = await axios.post(
-        `${"http://52.66.200.225"}/message`,
+        `${"https://y2kk.tk"}/message`,
         message
       );
       setMessages([...messages, res.data]);

@@ -40,7 +40,7 @@ export default function LoginForm({ setVisible }) {
       setLoading(true);
  
       const { data } = await axios.post(
-        `${"http://52.66.200.225"}/login`,
+        `${"https://y2kk.tk"}/login`,
         {
           email,
           password,

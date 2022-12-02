@@ -10,7 +10,7 @@ export default function Conversation({ conversation, currentUser }) {
     const getUser = async () => {
       try {
         const res = await axios.get(
-          `${"http://52.66.200.225"}/getUser/${friendId}`
+          `${"https://y2kk.tk"}/getUser/${friendId}`
         );
 
         setUser(res.data);

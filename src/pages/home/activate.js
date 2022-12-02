@@ -27,7 +27,7 @@ export default function Activate({ setVisible }) {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        `${"http://52.66.200.225"}/activate`,
+        `${"https://y2kk.tk"}/activate`,
         { token },
         {
           headers: {

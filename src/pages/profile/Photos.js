@@ -21,7 +21,7 @@ export default function Photos({ username, token }) {
         type: "PHOTOS_REQUEST",
       });
       const { data } = await axios.post(
-        `${"http://52.66.200.225"}/listImages`,
+        `${"https://y2kk.tk"}/listImages`,
   
         { path, sort, max },
         {

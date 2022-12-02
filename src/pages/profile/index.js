@@ -40,7 +40,7 @@ export default function Profile({ setVisible }) {
         type: "PROFILE_REQUEST",
       });
       const { data } = await axios.get(
-        `${"http://52.66.200.225"}/getProfile/${userName}`,
+        `${"https://y2kk.tk"}/getProfile/${userName}`,
         {
           headers: {
             Authorization: `Bearer ${user.token}`,

@@ -33,7 +33,7 @@ function App() {
         type: "POSTS_REQUEST",
       });
       const { data } = await axios.get(
-        `${"http://52.66.200.225"}/getAllposts`,
+        `${"https://y2kk.tk"}/getAllposts`,
         {
           headers: {
             Authorization: `Bearer ${user.token}`,
