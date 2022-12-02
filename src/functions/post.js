@@ -11,7 +11,7 @@ export const createPost = async (
 ) => {
   try {
     const { data } = await axios.post(
-      `${process.env.REACT_APP_BACKEND_URL}/createPost`,
+      `${"http://52.66.200.225"}/createPost`,
       {
         type,
         background,
@@ -33,7 +33,7 @@ export const createPost = async (
 export const reactPost = async (postId, react, token) => {
   try {
     const { data } = await axios.put(
-      `${process.env.REACT_APP_BACKEND_URL}/reactPost`,
+      `${"http://52.66.200.225"}/reactPost`,
       {
         postId,
         react,
@@ -52,7 +52,7 @@ export const reactPost = async (postId, react, token) => {
 export const getReacts = async (postId, token) => {
   try {
     const { data } = await axios.get(
-      `${process.env.REACT_APP_BACKEND_URL}/getReacts/${postId}`,
+      `${"http://52.66.200.225"}/getReacts/${postId}`,
 
       {
         headers: {
@@ -69,7 +69,7 @@ export const getReacts = async (postId, token) => {
 export const comment = async (postId, comment, image, token) => {
   try {
     const { data } = await axios.put(
-      `${process.env.REACT_APP_BACKEND_URL}/comment`,
+      `${"http://52.66.200.225"}/comment`,
       {
         postId,
         comment,
@@ -91,7 +91,7 @@ export const comment = async (postId, comment, image, token) => {
 export const deletePost = async (postId, token) => {
   try {
     const { data } = await axios.delete(
-      `${process.env.REACT_APP_BACKEND_URL}/deletePost/${postId}`,
+      `${"http://52.66.200.225"}/deletePost/${postId}`,
 
       {
         headers: {

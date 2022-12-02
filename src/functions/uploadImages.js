@@ -5,7 +5,7 @@ export const uploadImages = async (formData, path, token) => {
 
   try {
     const { data } = await axios.post(
-      `${process.env.REACT_APP_BACKEND_URL}/uploadImages`,
+      `${"http://52.66.200.225"}/uploadImages`,
       formData,
       // {
       //   headers: {

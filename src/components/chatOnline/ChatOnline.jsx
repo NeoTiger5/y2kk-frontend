@@ -14,7 +14,7 @@ export default function ChatOnline({
 
   useEffect(() => {
     const getFriends = async () => {
-      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/users`);
+      const res = await axios.get(`${"http://52.66.200.225"}/users`);
 
       setFriends(res.data.users);
     };
@@ -30,7 +30,7 @@ export default function ChatOnline({
 
     try {
       const res = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/getConversation/${user._id}`
+        `${"http://52.66.200.225"}/getConversation/${user._id}`
       );
 
       setCurrentChat(res.data);

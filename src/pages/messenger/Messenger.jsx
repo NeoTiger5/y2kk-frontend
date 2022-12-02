@@ -56,7 +56,7 @@ console.log();
     const getConversations = async () => {
       try {
         const res = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}/getConversation/${user.id}`
+          `${"http://52.66.200.225"}/getConversation/${user.id}`
         );
 
         setConversations(res.data);
@@ -71,7 +71,7 @@ console.log();
     const getMessages = async () => {
       try {
         const res = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}/getMessage/${currentChat?._id}`
+          `${"http://52.66.200.225"}/getMessage/${currentChat?._id}`
         );
         setMessages(res.data);
       } catch (err) {
@@ -102,7 +102,7 @@ console.log();
     });
     try {
       const res = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URL}/message`,
+        `${"http://52.66.200.225"}/message`,
         message
       );
       setMessages([...messages, res.data]);
